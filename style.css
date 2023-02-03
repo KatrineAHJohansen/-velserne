@@ -76,32 +76,32 @@ p {
 /* Produktkort standard*/
 .card_grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .card_button {
   margin: 1rem;
+  border: solid 2px #2d2d2d;
+  border-radius: 1rem;
+  padding: 0.3rem;
+  text-decoration: none;
+  color: #f5f5f5;
+  background-color: #2d2d2d;
+  font-weight: 200;
 }
 
 .card {
-  border: solid 4px #2d2d2d;
-  background-color: white;
-  border-radius: 0.75rem;
-  padding: 0.5rem;
+  border: solid 3px #2d2d2d;
+  background-color: rgb(234, 234, 234);
+  padding: 1.5rem;
 }
 
 .card_tekstdiv {
-  border-top: solid 2px #2d2d2d;
   height: auto;
   width: 100%;
   display: inline-block;
-}
-
-.card_tekstdiv a {
-  color: rgb(65, 140, 180);
-  font-weight: 550;
 }
 
 /*Produktkort rabat og udsolgt*/
@@ -111,6 +111,16 @@ p {
 
 .ny_pris {
   color: rgb(249, 81, 81);
+}
+
+.ny_pris_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.udsolgt_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 /* KATEGORIER */
