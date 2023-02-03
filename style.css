@@ -23,9 +23,10 @@ body {
 }
 
 main {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin-inline: auto;
+  padding: 2%;
 }
 
 h1,
@@ -129,6 +130,12 @@ p {
   background-color: #2d2d2d;
   border-radius: 0.5rem;
   text-align: center;
+}
+
+/*PRODUKT*/
+.produkt_grid_2 {
+  border: solid 2px #2d2d2d;
+  padding-bottom: 1rem;
 }
 
 /* WINDOWS */
