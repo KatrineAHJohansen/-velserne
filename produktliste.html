@@ -18,10 +18,10 @@
               <a href="">FORSIDE</a>
             </li>
             <li>
-              <a href="">BRANDS</a>
+              <a href="produktliste.html">BRANDS</a>
             </li>
             <li>
-              <a href="">NIKE</a>
+              <a href="">PRODUKT</a>
             </li>
           </ul>
         </nav>
@@ -29,18 +29,32 @@
       </header>
 
       <!--- Produkt--->
+      <!--- PARENT//GRID--->
       <div class="card_grid">
+        <!--- Produkt template--->
         <template id="produktliste_template">
+          <!---Hele boksen med tekst og img--->
           <div class="card">
             <div class="card_imgdiv">
               <article>
-                <img src="1573.webp" alt="Leggings Nike" />
+                <img src="" alt="billede af produkt" />
               </article>
             </div>
+            <!--- TEKST--->
             <div class="card_tekstdiv">
-              <h2>NIKE - LEGGINGS</h2>
-              <p>PRIS HER</p>
-              <a href="..." class="card_button">Læs mere</a>
+              <h2>OVERSKRIFT HER</h2>
+              <p>navn her</p>
+              <!--- Produkt pris--->
+              <p class="produkt_pris">PRIS HER</p>
+              <!--- Discount--->
+              <div class="discounted">
+                <p>discount pris her</p>
+                <p><span></span>%</p>
+              </div>
+            </div>
+            <!--- BUTTON--->
+            <div class="card_button">
+              <a href="produkt.html">Læs mere</a>
             </div>
           </div>
         </template>
@@ -49,71 +63,3 @@
     <script src="produktliste.js"></script>
   </body>
 </html>
-
-<!-- <div class="card">
-          <div class="card_imgdiv">
-            <img src="1573.webp" alt="Leggings Nike" />
-          </div>
-          <div class="card_tekstdiv">
-            <h2>NIKE - LEGGINGS</h2>
-            <p>PRIS HER</p>
-            <a href="..." class="card_button">Læs mere</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card_imgdiv">
-            <img src="1573.webp" alt="Leggings Nike" />
-          </div>
-          <div class="card_tekstdiv">
-            <h2>NIKE - LEGGINGS</h2>
-            <div class="udsolgt_grid">
-              <p class="gammel_pris">PRIS HER</p>
-              <p class="ny_pris">UDSOLGT</p>
-            </div>
-            <a href="..." class="card_button">Læs mere</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card_imgdiv">
-            <img src="1573.webp" alt="Leggings Nike" />
-          </div>
-          <div class="card_tekstdiv">
-            <h2>NIKE - LEGGINGS</h2>
-            <div class="udsolgt_grid">
-              <p class="gammel_pris">PRIS HER</p>
-              <p class="ny_pris">UDSOLGT</p>
-            </div>
-            <a href="..." class="card_button">Læs mere</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card_imgdiv">
-            <img src="1573.webp" alt="Leggings Nike" />
-          </div>
-          <div class="card_tekstdiv">
-            <h2>NIKE - LEGGINGS</h2>
-            <div class="ny_pris_grid">
-              <p class="gammel_pris">PRIS HER</p>
-              <p class="ny_pris">NU: NY PRIS HER</p>
-            </div>
-            <a href="..." class="card_button">Læs mere</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card_imgdiv">
-            <img src="1573.webp" alt="Leggings Nike" />
-          </div>
-          <div class="card_tekstdiv">
-            <h2>NIKE - LEGGINGS</h2>
-            <div class="ny_pris_grid">
-              <p class="gammel_pris">PRIS HER</p>
-              <p class="ny_pris">NU: NY PRIS HER</p>
-            </div>
-            <a href="..." class="card_button">Læs mere</a>
-          </div>
-        </div>
-      </div> -->
