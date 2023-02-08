@@ -1,21 +1,22 @@
-// lav url search objekt
-const urlParams = new URLSearchParams(window.location.search);
-
-// find sub kategori
-const subcategories = urlParams.get("kategori");
-
-// skab endpoint for search
-const endpoint = `https://kea-alt-del.dk/t7/api/products/${subcategories}`;
+const endpoint = `https://kea-alt-del.dk/t7/api/subcategories`;
 
 function hentData() {
   fetch(endpoint)
-    .then((res) => res.json())
-    .then(visSubKategorier);
+    .then((respons) => respons.json())
+    .then(visData);
 }
 
-function visSubKategorier(subcategory) {
-  console.log(subcategory);
-  document.querySelector(".produktliste_grid").textContent = kategori.subcategory;
+const skabelon = document.querySelector("#produktliste_template").content;
+const beholder = document.querySelector(".produktliste_grid");
+
+function visData(json) {
+  console.log(json);
+  json.forEach((kategori) => {
+    const klon = skabelon.cloneNode(true);
+    klon.querySelector("a").href = "produktliste.html?subcategory=" + kategori.subcategory;
+    klon.querySelector("a").textContent = kategori.subcategory;
+    beholder.appendChild(klon);
+  });
 }
 
 hentData();
