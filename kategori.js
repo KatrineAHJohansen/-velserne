@@ -1,4 +1,5 @@
-const endpoint = `https://kea-alt-del.dk/t7/api/subcategories`;
+let endpoint = `https://kea-alt-del.dk/t7/api/subcategories`;
+
 
 function hentData() {
   fetch(endpoint)

@@ -1,4 +1,5 @@
-const endpoint = `https://kea-alt-del.dk/t7/api/products`;
+let endpoint = `https://kea-alt-del.dk/t7/api/products`;
+let itemUrl;
 
 function hentData() {
   fetch(endpoint)
@@ -33,4 +34,22 @@ function visData(json) {
   });
 }
 
-hentData();
+function getProductsBySubcategory() {
+  endpoint = `https://kea-alt-del.dk/t7/api/products?subcategory=${itemUrl}`;
+  hentData();
+}
+
+window.onload = function() {
+
+  itemUrl = window.location.href.split("=")[1];
+  console.log(itemUrl)
+
+  if(window.location.href.includes("?subcategory=")){
+    getProductsBySubcategory();
+  }
+
+  else {
+    hentData();
+  }
+}
+
