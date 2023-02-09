@@ -1,4 +1,4 @@
-let endpoint = `https://kea-alt-del.dk/t7/api/products`;
+let endpoint = `https://kea-alt-del.dk/t7/api/products?limit=40`;
 let itemUrl;
 
 function hentData() {

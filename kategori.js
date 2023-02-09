@@ -1,4 +1,4 @@
-let endpoint = `https://kea-alt-del.dk/t7/api/subcategories`;
+let endpoint = `https://kea-alt-del.dk/t7/api/subcategories?limit=40`;
 
 
 function hentData() {
