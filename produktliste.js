@@ -39,17 +39,13 @@ function getProductsBySubcategory() {
   hentData();
 }
 
-window.onload = function() {
-
+window.onload = function () {
   itemUrl = window.location.href.split("=")[1];
-  console.log(itemUrl)
+  console.log(itemUrl);
 
-  if(window.location.href.includes("?subcategory=")){
+  if (window.location.href.includes("?subcategory=")) {
     getProductsBySubcategory();
-  }
-
-  else {
+  } else {
     hentData();
   }
-}
-
+};

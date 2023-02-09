@@ -1,6 +1,5 @@
-// lav url search objekt
 const urlParams = new URLSearchParams(window.location.search);
-// find id
+
 const productid = urlParams.get("id");
 
 const imagePath = `https://kea-alt-del.dk/t7/images/webp/640/${productid}.webp`;

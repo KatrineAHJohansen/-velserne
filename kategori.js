@@ -1,6 +1,5 @@
 let endpoint = `https://kea-alt-del.dk/t7/api/subcategories?limit=40`;
 
-
 function hentData() {
   fetch(endpoint)
     .then((respons) => respons.json())
